@@ -1,177 +1,98 @@
-<!DOCTYPE html>
+<div class="container-fluid">
+   <div class="row m-5">
+      {# Left sidebar #}
+      <div class="col-lg-3 col-md-5 col-sm-12">
+         <div class="card" style="width: 17rem;">
+            <div class="card-body">
+               <h5 class="card-title">Adhérer</h5>
+               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+               <a href="#" class="btn btn-secondary">J'adhère</a>
+            </div>
+         </div>
+         <div class="card mt-3" style="width: 17rem;">
+            <div class="card-body">
+               <h5 class="card-title">Faire un don</h5>
+               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+               <a href="#" class="btn btn-secondary">Je fais don</a>
+            </div>
+         </div>
+      </div>
 
-<html lang="fr">
+      {# Main content #}
+      <div class="col-lg-9 col-md-7 col-sm-12">
+         <div class="row">
+            <div class="col-12 my-3">
+               <h1>Derniéres actualités</h1>
+            </div>
+         </div>
 
-	<head>
-
-		<meta charset="UTF-8">
-		<meta name="description" content="site FNDIRP">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Olha NEKRASHEVYCH">
-
-		<title>FNDIRP</title>
-<!-- Bootstrap -->
-		<link
-		rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
-		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/a33411c3e8.js" crossorigin="anonymous"></script>
-<!-- CSS -->
-		<link
-		rel="stylesheet" href="{{ asset('css/style.css') }}">
-		{# asset pour viser le dossier "public" #}
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-		<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap" rel="stylesheet"> {% block stylesheets %}{% endblock %}
-
-
-		</head>
-			<body>
-		
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-
-					<a class="navbar-brand pl-3" href="#">
-
-
-						<img id="logo" src="{{ asset('img/Logo_FNDIRP.png') }}" width="500" class="img-fluid " alt="logo"/>
-
-					</a>
-
-
-					<i class="fa fa-thumbs-up fa-5x"></i>
-
-
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ml-lg-auto ">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Accueil</a>
-							</li>
-
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Qui sommes-nous?
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li>
-										<a class="dropdown-item" href="#">Historique</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">Statut</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Boutique</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Contact</a>
-							</li>
-						</ul>
-					</li>
-
-				</ul>
-				<form class="d-flex ml-5">
-					<input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
-					<button class="btn btn-outline-secondary" type="submit">Recherche</button>
-				</form>
-			</div>
-		</div>
-	
-</nav></header><!-- Footer -->
-
-<footer class="bg-white">
-<div class="container py-5">
-	<div class="row py-4">
-		<div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="{{ asset('img/Logo_FNDIRP.png') }}" alt="" width="300" class="mb-3">
-
-			<div class="social-icons">
-				<a href="https://www.facebook.com/">
-					<i class="fab fa-facebook"></i>
-				</a>
-				<a href="https://twitter.com/">
-					<i id="social-tw" class="fas fa-twitter-square fa-2x social"></i>
-				</a>
-				<a href="https://plus.google.com/">
-					<i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i>
-				</a>
-				<a href="mailto:bootsnipp@gmail.com">
-					<i id="social-em" class="fa fa-envelope-square fa-2x social"></i>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-			<h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
-			<ul class="list-unstyled mb-0">
-				<li class="mb-2">
-					<a href="#" class="text-muted">For Women</a>
-				</li>
-				<li class="mb-2">
-					<a href="#" class="text-muted">For Men</a>
-				</li>
-				<li class="mb-2">
-					<a href="#" class="text-muted">Stores</a>
-				</li>
-				<li class="mb-2">
-					<a href="#" class="text-muted">Our Blog</a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-			<h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
-			<ul class="list-unstyled mb-0">
-				<li class="mb-2">
-					<a href="#" class="text-muted">Login</a>
-				</li>
-				<li class="mb-2">
-					<a href="#" class="text-muted">Register</a>
-				</li>
-				<li class="mb-2">
-					<a href="#" class="text-muted">Wishlist</a>
-				</li>
-				<li class="mb-2">
-					<a href="#" class="text-muted">Our Products</a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-lg-0">
-			<h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-			<p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-			<div class="p-1 rounded border">
-				<div class="input-group">
-					<input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-					<div class="input-group-append">
-						<button id="button-addon1" type="submit" class="btn btn-link">
-							<i class="fa fa-paper-plane"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Copyrights -->
-<div class="bg-light py-4">
-	<div class="container text-center">
-		<p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
-	</div>
-</div></footer><!-- End --><body>
-
-
-{% block javascripts %}{% endblock %}
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-			</body>
-
-</html>
+         {# Article #}
+            <div class="row">
+               <h5>Title</h5>
+                           </div>
+            <div class="row">
+             <p>01.01.21</p>  
+            </div>
+            <div class="row">
+               
+            
+            <div class="col-lg-3 col-md-12">
+               <img src="{{ asset('img/Logo_FNDIRP.png') }}" alt="" width="300" class="mb-3">
+            </div>
+            <div class="col-lg-9 col-md-12">
+               
+               
+               <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   /* Content */
+   section{width:100%; float:left;}
+   .banner-section{background-image:url("https://static.pexels.com/photos/373912/pexels-photo-373912.jpeg"); background-size:cover; height: 380px; left: 0; position: absolute; top: 0; background-position:0;}
+   .post-title-block{padding:100px 0;}
+   .post-title-block h1 {color: #fff; font-size: 85px; font-weight: bold; text-transform: capitalize;}
+   .post-title-block li{font-size:20px; color: #fff;}
+   .image-block{float:left; width:100%; margin-bottom:10px;}
+   .footer-link{float:left; width:100%; background:#222222; text-align:center; padding:30px;}
+   .footer-link a{color:#A9FD00; font-size:18px; text-transform:uppercase;}
+    footer a,
+   footer a:hover{
+     color: #26415e;
+   }
+   <section class="post-content-section">
+      <div class="container-fluid">
+   
+          <div class="row">
+   
+              <div class="col-lg-9 col-md-9 col-sm-12">
+                  <p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+   <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                   
+               </div>
+              <div class="col-lg-3  col-md-3 col-sm-12">
+                  <div class="well">
+                      <h2>Subscription Box</h2>
+                      <p>Form Description Goes here</p>
+                      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
+        </span>
+      </div>
+                  </div>
+    
+                  <div class="well">
+                      <h2>About Author</h2>
+                      <img src="" class="img-rounded" />
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                      
+              </div>
+          </div>
+        
+   
+      </div> <!-- /container -->
+   </section>

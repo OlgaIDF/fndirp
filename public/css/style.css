@@ -4,21 +4,49 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Lato", sans-serif;
-  font-size: calc(0.8rem + ((1vw - 0.48rem) * 0.6944));
+  font-size: calc(0.7rem + ((1vw - 0.48rem) * 0.6944));
   min-height: 0vw;
-  
 }
+h1,
+h2,
+h5 {
+  font-family: "Roboto", sans-serif;
+  color: #26415e;
+  font-weight: 600;
+}
+/* Header */
 header {
   padding-top: 2.5rem;
 }
-header p {
-  font-family: "Roboto", sans-serif ;
-  
+
+/* Navbar */
+.navbar {
+  background-image: url("../img/auschwitz.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
- footer a,
-footer a:hover{
+/*Events*/
+.card {
+  display: inline-block;
+  align-items: center;
+  width: 18rem;
+  padding: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  border-left: solid lightgray;
+}
+/* Footer */
+footer a,
+footer a:hover {
   color: #26415e;
 }
 footer {
-   font-size: smaller;
-  }
+  background-color: #e0dfdb;
+}
+
+.copyright p {
+  font-weight: 600;
+}

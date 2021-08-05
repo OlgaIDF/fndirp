@@ -1,152 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="description" content="La FNDIRP rassemble depuis 1945 les victimes du nazisme
+{# Head #}
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description"
+		content="La FNDIRP rassemble depuis 1945 les victimes du nazisme
 La FNDIRP plonge ses racines dans les crimes sans précédent du nazisme.
-C’est au nom des serments des rescapés des camps que la FNDIRP a développé depuis 1945 de multiples activités de mémoire et de vigilance"/>
-		<meta name="keywords" content="FNDIRP"/>
-		<meta name="author" content="NEKRASHEVYCH Olha"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>FNDIRP</title>
-		<!-- Bootstrap -->
-		<link
-		rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
-		<!-- CSS -->
-		<link
-		rel="stylesheet" href="{{ asset('css/style.css') }}"/>
-		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/e2b423cc67.js" crossorigin="anonymous"></script>
-		<!-- Icon 
-		<link
-		rel="shortcut icon" type="image/png" sizes="32x32" href="./img/logoonglet.png"/>-->
+C’est au nom des serments des rescapés des camps que la FNDIRP a développé depuis 1945 de multiples activités de mémoire et de vigilance" />
+	<meta name="keywords" content="FNDIRP" />
+	<meta name="author" content="NEKRASHEVYCH Olha" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>FNDIRP</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/e2b423cc67.js" crossorigin="anonymous"></script>
+	<!-- Icon  -->
 
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/logoonglet.png">
 
-		
-	</head>
 
-	<body>
-<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<a class="navbar-brand pl-3" href="#">
-						<img id="logo" src="{{ asset('img/Logo_FNDIRP.png') }}" width="500" class="img-fluid " alt="logo"/>
-					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ml-lg-auto ">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Accueil</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Qui sommes-nous?
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li>
-										<a class="dropdown-item" href="#">Historique</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">Statut</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Boutique</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Contact</a>
-							</li>
-						</ul>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<!-- /Head -->
+<body>
+	{# Header #}
+	<header>
+		{# Navbar #}
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand ml-4" href="#"><img id="logo" class="img-fluid" src="{{ asset('img/Logo_FNDIRP.png') }}" width="400"
+					 alt="logo" /></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-lg-auto ">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
 					</li>
 
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Qui sommes-nous?
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Historique </a>
+									<a class="dropdown-item" href="#">Statut</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Boutique</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
 				</ul>
-				<form class="d-flex ml-5">
-					<input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
-					<button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+				<form class="form-inline my-2 my-lg-0 ml-3">
+					<input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+					<button class="btn btn-outline-secondary btn-sm my-1 my-sm-0" type="submit"><i
+							class="fas fa-search"></i></button>
 				</form>
 			</div>
-		</div>
-	
-</nav></header>
-	
-		{% block body %}{% endblock %}
-		
-		<!-- Footer -->
+		</nav>
+	</header>
+{# /header #}
+	{% block body %}{% endblock %}
 
-<footer class="bg-white">
-<div class="container-fluid p-5 ">
-	<div class="row py-4">
-		<div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="{{ asset('img/Logo_FNDIRP.png') }}" alt="" width="300" class="mb-3">
+	<!-- Footer -->
 
-			<div class="social-icons mt-3">
-				<a href="https://www.facebook.com/fndirp/">
-					<i class="fab fa-facebook fa-lg social"></i>
-				</a>
-				<a href="https://twitter.com/FndirpParis">
-					<i class="fab fa-twitter fa-lg social"></i>
-				</a>
-				<a href="https://plus.google.com/u/0/107116465944992320938">
-					<i class="fab fa-google-plus fa-lg social"></i>
-				</a>
-				<a href="https://www.youtube.com/channel/UCI16eQ7xKkFfbZxbnZgR6ZQ">
-					<i class="fab fa-youtube  fa-lg social"></i>
-				</a>
-				<a href="https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_nationale_des_d%C3%A9port%C3%A9s_et_intern%C3%A9s_r%C3%A9sistants_et_patriotes">
-				<i class="fab fa-wikipedia-w fa-lg social"></i>
-				</a>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-			<h6 class="text-uppercase font-weight-bold mb-4">Contacts</h6>
-			
-			<p class="text-muted"><i class="fas fa-home mr-1"></i> 10 rue Leroux 75116 PARIS </p>
-<p class="text-muted"><i class="fa fa-phone mr-1"></i> 01 44 17 38 38</p>
-<p class="text-muted"><i class="fa fa-envelope mr-1"></i>fndirp@fndirp.asso.fr</p>
-		
-		
-		</div>
-		<div class="col-lg-4 col-md-6 mb-lg-0">
-			<h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-			<p class="text-muted mb-4">Abonnez-vous à notre newsletter pour suivre toute l'actualité FNDIRP en avant-première !</p>
-			<div class="p-1 rounded border">
-				<div class="input-group">
-					<input type="email" placeholder="Votre adresse  email " aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-					<div class="input-group-append">
-						<button id="button-addon1" type="submit" class="btn btn-link">
-							<i class="fa fa-paper-plane"></i>
-						</button>
+	<footer>
+		<div class="container-fluid p-5 ">
+			<div class="row py-4">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="{{ asset('img/Logo_FNDIRP.png') }}" class="img-fluid" alt="" width="300"					>
+
+					<div class="social-icons mt-3">
+						<a href="https://www.facebook.com/fndirp/">
+							<i class="fab fa-facebook fa-lg social"></i>
+						</a>
+						<a href="https://twitter.com/FndirpParis">
+							<i class="fab fa-twitter fa-lg social"></i>
+						</a>
+						<a href="https://plus.google.com/u/0/107116465944992320938">
+							<i class="fab fa-google-plus fa-lg social"></i>
+						</a>
+						<a href="https://www.youtube.com/channel/UCI16eQ7xKkFfbZxbnZgR6ZQ">
+							<i class="fab fa-youtube  fa-lg social"></i>
+						</a>
+						<a
+							href="https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_nationale_des_d%C3%A9port%C3%A9s_et_intern%C3%A9s_r%C3%A9sistants_et_patriotes">
+							<i class="fab fa-wikipedia-w fa-lg social"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<h6 class="text-uppercase font-weight-bold mb-4">Contacts</h6>
+
+					<p><i class="fas fa-home mr-1"></i> 10 rue Leroux 75116 PARIS </p>
+					<p><i class="fa fa-phone mr-1"></i> 01 44 17 38 38</p>
+					<p><i class="fa fa-envelope mr-1"></i>fndirp@fndirp.asso.fr</p>
+
+
+				</div>
+				<div class="col-lg-4 col-md-6 mb-lg-0">
+					<h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+					<p class="mb-4">Abonnez-vous à notre newsletter pour suivre toute l'actualité FNDIRP en
+						avant-première !</p>
+					<div class="p-1 rounded border">
+						<div class="input-group">
+							<input type="email" placeholder="Votre adresse  email " aria-describedby="button-addon1"
+								class="form-control border-0 shadow-0">
+							<div class="input-group-append">
+								<button id="button-addon1" type="submit" class="btn btn-link">
+									<i class="fa fa-paper-plane"></i>
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
-<!-- Copyrights -->
-<div class="bg-light py-4">
-	<div class="container text-center">
-		<p class="text-muted mb-0 py-2">© 2021 FNDIRP All Tous droits réservés.</p>
-		<a href="#"> Mentions légales</a>
-				<a href="#">|  Gestion et protection des données personnelles</a>
+		<!-- Copyrights -->
+		<div class="py-4">
+			<div class="container text-center copyright">
+				<p class="mb-0 py-2 ">© 2021 FNDIRP | Tous droits réservés</p>
+				<a href="#"> Mentions légales</a>
+				<a href="#">| Gestion et protection des données personnelles</a>
 				<a href="#">| Conditions général de vente</a>
-	</div>
-</div></footer><!-- End -->
-		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		
+			</div>
+		</div>
+	</footer><!-- /footer-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
 
-		{% block javascripts %}{% endblock %}
-	</body>
+
+	{% block javascripts %}{% endblock %}
+</body>
 
 </html>
