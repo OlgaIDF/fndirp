@@ -7,26 +7,69 @@
   font-size: calc(0.7rem + ((1vw - 0.48rem) * 0.6944));
   min-height: 0vw;
 }
-h1,
-h2,
-h5 {
+
+h1, h2, h5, h6 {
   font-family: "Roboto", sans-serif;
-  color: #26415e;
+  color: #2f3d59;
   font-weight: 600;
 }
+
+.title {
+  border-bottom: solid #d93636;
+}
+
+.text {
+  border-bottom: solid #e0dfdb 1px;
+}
+
 /* Header */
+
 header {
   padding-top: 2.5rem;
 }
 
 /* Navbar */
-.navbar {
+
+.navbar{
   background-image: url("../img/auschwitz.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 14rem;
 }
+ .collapse .navbar-collapse {
+   background-color: #f4f3ef;
+   margin-left: -1rem;
+   margin-right: -1rem;
+   padding-left: 1.5rem;
+ }
+
+.nav-link .active li {
+  color: #26415e;
+}
+
+.nav-item {
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link, .dropdown-item {
+  color: #26415e;
+  font-weight: 600;
+ }
+ .navbar-light .navbar-nav .nav-item .nav-link:hover, .dropdown-item:hover {
+  color: #d93636;
+  font-weight: 600;
+ } 
+#logo{
+  width: 25rem;
+}
+.input-group{
+  width: 15rem !important;
+}
+
 /*Events*/
+
 .card {
   display: inline-block;
   align-items: center;
@@ -35,18 +78,37 @@ header {
 }
 
 /* Sidebar */
+
 .sidebar {
-  border-left: solid lightgray;
+  border-left: solid #e0dfdb 1px;
 }
+
 /* Footer */
-footer a,
-footer a:hover {
+
+footer a, footer a:hover {
   color: #26415e;
 }
+
 footer {
   background-color: #e0dfdb;
 }
 
-.copyright p {
-  font-weight: 600;
+.footer_top {
+  border-bottom: solid #26415e 3px;
+}
+
+.fa, .fas, .far {
+  color: #d93636;
+}
+
+.fab {
+  padding-right: 1rem;
+}
+
+.fa-search, .fa-paper-plane {
+  color: white;
+}
+
+.btn {
+  background-color: #26415e;
 }
