@@ -30,19 +30,20 @@ header {
 
 /* Navbar */
 
-.navbar{
+.navbar {
   background-image: url("../img/auschwitz.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 14rem;
 }
- .collapse .navbar-collapse {
-   background-color: #f4f3ef;
-   margin-left: -1rem;
-   margin-right: -1rem;
-   padding-left: 1.5rem;
- }
+
+.collapse .navbar-collapse {
+  background-color: #f4f3ef;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-left: 1.5rem;
+}
 
 .nav-link .active li {
   color: #26415e;
@@ -56,15 +57,18 @@ header {
 .navbar-light .navbar-nav .nav-item .nav-link, .dropdown-item {
   color: #26415e;
   font-weight: 600;
- }
- .navbar-light .navbar-nav .nav-item .nav-link:hover, .dropdown-item:hover {
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover, .dropdown-item:hover {
   color: #d93636;
   font-weight: 600;
- } 
-#logo{
+}
+
+#logo {
   width: 25rem;
 }
-.input-group{
+
+.input-group {
   width: 15rem !important;
 }
 
@@ -111,4 +115,40 @@ footer {
 
 .btn {
   background-color: #26415e;
+}
+
+/* Map */
+
+.map_image path {
+  fill: #e0dfdb;
+  stroke: white;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+  width: 50%;
+}
+
+.map_image path:hover {
+  fill: #d93636;
+  cursor: grab;
+}
+
+.coordinates {
+  display: none;
+  font-size: 0.7rem;
+}
+
+.coordinates span, .coordinates .fas {
+  font-size: 0.8rem;
+}
+
+.coordinates b, .coordinates strong {
+  font-size: 0.9rem;
+}
+.coordinates table th, .coordinates table td{
+  padding-left: 1rem;
+  
+}
+
+svg {
+  width: 80%;
 }
