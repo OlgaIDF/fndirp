@@ -118,6 +118,13 @@ footer {
 }
 
 /* Map */
+.map_image{
+  border-left: solid #e0dfdb 1px;
+}
+.contact {
+  border-bottom: solid #e0dfdb 1px;
+}
+
 
 .map_image path {
   fill: #e0dfdb;
@@ -125,16 +132,22 @@ footer {
   stroke-width: 1px;
   transition: fill 0.3s;
   width: 50%;
+  
 }
 
-.map_image path:hover {
+path:hover {
   fill: #d93636;
   cursor: grab;
+}
+
+.active {
+  fill: #e0dfdb;
 }
 
 .coordinates {
   display: none;
   font-size: 0.7rem;
+  
 }
 
 .coordinates span, .coordinates .fas {
@@ -144,9 +157,9 @@ footer {
 .coordinates b, .coordinates strong {
   font-size: 0.9rem;
 }
-.coordinates table th, .coordinates table td{
+
+.coordinates table th, .coordinates table td {
   padding-left: 1rem;
-  
 }
 
 svg {

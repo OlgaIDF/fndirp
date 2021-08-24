@@ -1,14 +1,18 @@
-$('.land').hover (
+jQuery(document).ready(function(){
+$('.land').click(
    function (){
-     
+      
       $('.coordinates').html($(this).attr('coordinates-data'));
       $('.coordinates').fadeIn();
-      
-   },
-   function(){
-      $('.coordinates').fadeOut(50);
+      $('html, body').animate({
+         scrollTop: $('.coordinates').offset().top 
+     });
      
      
-   }
+
   
-)
+
+   })
+  
+ 
+  });

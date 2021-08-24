@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 {# Head #}
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="description"
@@ -31,13 +32,14 @@ C’est au nom des serments des rescapés des camps que la FNDIRP a développé 
 
 </head>
 <!-- /Head -->
+
 <body>
 	{# Header #}
 	<header>
 		{# Navbar #}
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand ml-4" href="#"><img id="logo" class="img-fluid" src="{{ asset('img/Logo_FNDIRP.png') }}" 
-					 alt="logo" /></a>
+			<a class="navbar-brand ml-4" href="#"><img id="logo" class="img-fluid" src="{{ asset('img/Logo_FNDIRP.png') }}"
+					alt="logo" /></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -46,7 +48,7 @@ C’est au nom des serments des rescapés des camps que la FNDIRP a développé 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-lg-auto ">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="{{ path('home')}}">Accueil<span class="sr-only">(current)</span></a>
 					</li>
 
 					<li class="nav-item dropdown">
@@ -56,26 +58,26 @@ C’est au nom des serments des rescapés des camps que la FNDIRP a développé 
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Historique </a>
-									<a class="dropdown-item" href="#">Statut</a>
+							<a class="dropdown-item" href="#">Statut</a>
 						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Boutique</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="{{ path('contact') }}">Contact</a>
 					</li>
 				</ul>
 				<form class="form-group input-group  my-2 my-lg-0 ml-3">
-					<input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-					<button class="btn btn-sm my-1 my-sm-0" type="submit"><i
-							class="fas fa-search"></i></button>
+					<input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Recherche"
+						aria-label="Search">
+					<button class="btn btn-sm my-1 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 				</form>
 			</div>
 		</nav>
 	</header>
 
-{# /header #}
+	{# /header #}
 	{% block body %}{% endblock %}
 
 	<!-- Footer -->
@@ -83,7 +85,8 @@ C’est au nom des serments des rescapés des camps que la FNDIRP a développé 
 	<footer>
 		<div class="container-fluid p-5 ">
 			<div class="row pb-5 footer_top">
-				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="{{ asset('img/Logo_FNDIRP.png') }}" class="img-fluid" alt="" width="300"					>
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="{{ asset('img/Logo_FNDIRP.png') }}" class="img-fluid"
+						alt="" width="300">
 
 					<div class="mt-5 ">
 						<a href="https://www.facebook.com/fndirp/">
@@ -108,7 +111,7 @@ C’est au nom des serments des rescapés des camps que la FNDIRP a développé 
 					<h6 class="text-uppercase font-weight-bold mb-4">Contacts</h6>
 
 					<p><i class="fas fa-home pr-2"></i> 10 rue Leroux 75116 PARIS </p>
-					<p><i class="fa fa-phone pr-2"></i> 01 44 17 38 38</p>
+					<p><i class="fas fa-phone-alt pr-2"></i> 01 44 17 38 38</p>
 					<p><i class="fa fa-envelope pr-2"></i>fndirp@fndirp.asso.fr</p>
 
 
